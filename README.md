@@ -49,7 +49,7 @@ still around, it gets past LDAP signing on a patched DC.
   Netlogon secure channel (`-oracle-machine`). Under default MachineAccountQuota any domain
   user can create one.
 - **A victim that emits NTLMv1-ESS** — i.e. `LmCompatibilityLevel <= 2` or a legacy source.
-  Default modern Windows emits NTLMv2 (and 24H2 / Server 2025 remove NTLMv1 entirely), so this
+  By default modern Windows emits NTLMv2 (and Windows 11 / Server 2025 remove NTLMv1 entirely), so this
   is a legacy-dependent path.
 - The victim coerced to authenticate to `-listen-ip` over **SMB**, and authorized to write the
   target object (e.g. its own RBCD attribute).
