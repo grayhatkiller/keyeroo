@@ -40,7 +40,7 @@ around Impacket's `ntlmrelayx.py` and starts it for you.
 
 The catch is that this only works if the victim sends NTLMv1-ESS, which means
 `LmCompatibilityLevel` 2 or lower, or an older stack. Modern Windows defaults to NTLMv2, and
-24H2 and Server 2025 drop NTLMv1 entirely, so this is a legacy path. Where that legacy is
+Windows 11 and Server 2025 drop NTLMv1 entirely, so this is a legacy path. Where that legacy is
 still around, it gets past LDAP signing on a patched DC.
 
 ## Requirements
